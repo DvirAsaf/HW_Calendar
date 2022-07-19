@@ -26,7 +26,7 @@ namespace CalendarY.Model
         public static void CreateTable(SQLiteConnection conn)
         {
             SQLiteCommand sqlitecommand = conn.CreateCommand();
-            string sql = "CREATE TABLE IF NOT EXISTS DbTable (date VARCHAR(30), event VARCHAR(30))";
+            string sql = "CREATE TABLE IF NOT EXISTS myTable (date VARCHAR(30), event VARCHAR(30))";
             sqlitecommand.CommandText = sql;
             sqlitecommand.ExecuteNonQuery();
         }
@@ -37,8 +37,8 @@ namespace CalendarY.Model
         public static void InsertData(SQLiteConnection conn, string date, string even)
         {
             SQLiteCommand sqlitecommand = conn.CreateCommand();
-            String insert = "INSERT INTO DbTable(date, event) VALUES (?,?);";
-            String drop = "DELETE FROM DbTable where date = ?";
+            String insert = "INSERT INTO myTable(date, event) VALUES (?,?);";
+            String drop = "DELETE FROM myTable where date = ?";
             sqlitecommand.CommandText = drop;
             sqlitecommand.Parameters.AddWithValue("date", date);
             sqlitecommand.ExecuteNonQuery();
@@ -61,7 +61,7 @@ namespace CalendarY.Model
             SQLiteDataReader reader;
             SQLiteCommand cmd;
             cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT * FROM DbTable where date = ?";
+            cmd.CommandText = "SELECT * FROM myTable where date = ?";
             cmd.Parameters.AddWithValue("date", Form1.StaticMonthI + "/" + dateDay + "/" + Form1.StaticYearI);
             reader = cmd.ExecuteReader(); 
             if (reader.Read())

@@ -9,8 +9,13 @@ A WPF application that allows the user to make the following operations:
    2. A weekend [Friday – Saturday] day will be colored as red 
    3. The events the user entered are being saved in a database, therefore the app can be restarted while keeping all information. 
 
+<br>
 
-# Introduction
+# Video Explanation
+
+https://youtu.be/R7piyGN2B98
+
+# Screenshots
 
 ![1](https://user-images.githubusercontent.com/59093573/179752593-31c4d0f3-391e-4480-be7b-e07bd192f211.png)
 
@@ -41,12 +46,6 @@ A WPF application that allows the user to make the following operations:
 
 ![10](https://user-images.githubusercontent.com/59093573/179752706-4d6ff3f2-e174-43f4-b2fe-54ebe16659d7.png)
 
-
-<br>
-
-# Video Explanation
-
-https://youtu.be/3bkHWxpU0zY
 
 # Authors
 Dvir Asaf <br>
