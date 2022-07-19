@@ -1,5 +1,15 @@
 # Calendar
 
+#### Task Description
+A WPF application that allows the user to make the following operations:
+1. View the days of a month organized by the weekdays.
+2. Move back and forward the months.
+3. Mark a specific day by clicking it and entering a text (the text will be presented under the specific day)
+   1. A marked weekday [Sunday to Thursday] will be colored as blue
+   2. A weekend [Friday – Saturday] day will be colored as red 
+   3. The events the user entered are being saved in a database, therefore the app can be restarted while keeping all information. 
+
+
 # Introduction
 
 ![1](https://user-images.githubusercontent.com/59093573/179752593-31c4d0f3-391e-4480-be7b-e07bd192f211.png)
